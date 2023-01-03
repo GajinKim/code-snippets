@@ -1,7 +1,7 @@
 let nPrimes = 10;
 let primes = []; // 2 3 5 7 11
 let nonPrimes = [1]; // 1 4 6 8 9 10
-    
+
 function getNthPrimes(n) {
     current = 2;
     while (primes.length < n) {
@@ -26,3 +26,5 @@ const sumOfFirstNthPrimes = primes.reduce((sum, number) => {
 console.log('primes:', primes.join(" "));
 console.log('non primes:', nonPrimes.join(" "));
 console.log('sum of first', nPrimes, 'prime numbers:', sumOfFirstNthPrimes);
+
+module.exports = { getNthPrimes }
